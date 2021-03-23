@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intimacyyui/data/data.dart';
+import 'package:intimacyyui/widgets/custom_drawer.dart';
 import 'package:intimacyyui/widgets/following_user.dart';
 import 'package:intimacyyui/widgets/posts_carousel.dart';
 
@@ -60,6 +61,7 @@ class _HomeScreenState extends State<HomeScreen>
           ],
         ),
       ),
+      drawer: CustomDrawer(),
       body: ListView(
         children: <Widget>[
           FollowingUsers(),
